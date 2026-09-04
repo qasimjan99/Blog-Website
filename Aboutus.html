@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GFXinn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .service-section {
+      padding: 50px 15px;
+      background-color: white;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    }
+    .service-section:nth-child(even) {
+      flex-direction: row-reverse;
+      background-color: #e9ecef;
+    }
+    .service-text {
+      flex: 1;
+    }
+    .service-text h2 {
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .service-text p {
+      color: #6c757d;
+      margin-bottom: 20px;
+    }
+    .service-buttons .btn {
+      margin-right: 10px;
+    }
+    .service-image {
+      flex: 1;
+      max-width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .service-image img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      .service-section {
+        flex-direction: column !important;
+        text-align: center;
+      }
+      .service-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <!-- ****************Navbar************************ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h4>GFXinn</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Index.html">
+                            <h6>Home</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Aboutus.html">
+                            <h6>About Us</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Digital Marketing</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Web Development</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Artificial Intelligence</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contactus.html">
+                            <h6>Contact Us</h6>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+                <div Class="mx-3">
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                        data-bs-target="#SignupModal">Signup</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- 
+    <div class="card text-bg-dark">
+        <img src="image/about us.PNG" height="500" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <br><br><br><br><br><br><br><br>
+        </div>
+    </div> -->
+    <!-- <img src="image/about us.PNG" width="1270" height="500px"> -->
+
+    <div class="img-hover-container">
+    <img src="image/about us.PNG" alt="..." />
+</div>
+
+    <!-- ********************** Hero Section******************** -->
+    <!-- 1 -->
+    <!-- <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="image/Digital M about2.PNG" height="500" class="d-block mx-lg-auto img-fluid"
+                    alt="Bootstrap Themes" width="700" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Digital Marketing Services</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                    most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+                    system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr> -->
+    <!-- 2 -->
+    <!-- <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6 order-md-2">
+                <img src="image/Grap logo design about.PNG" height="500" class="d-block mx-lg-auto img-fluid"
+                    alt="Bootstrap Themes" width="700" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Graphic Designing Services</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                    most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+                    system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr> -->
+    <!-- 3 -->
+    <!-- <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="image/BLOGGING About.PNG" height="500" class="d-block mx-lg-auto img-fluid"
+                    alt="Bootstrap Themes" width="700" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Content Writing and Blogging</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                    most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+                    system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+<!-- ************* 01 *************** -->
+
+<div class="container my-5">
+  <div class="service-section">
+    <div class="service-text">
+      <h2>Digital Marketing Services</h2>
+      <p>
+        Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+      </p>
+      <div class="service-buttons d-flex">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-outline-primary">Default</button>
+      </div>
+    </div>
+    <div class="service-image">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Digital Marketing" />
+    </div>
+  </div>
+
+  <div class="service-section">
+    <div class="service-text">
+      <h2>Graphic Designing Services</h2>
+      <p>
+        Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+      </p>
+      <div class="service-buttons d-flex">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-outline-primary">Default</button>
+      </div>
+    </div>
+    <div class="service-image">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Graphic Designing" />
+    </div>
+  </div>
+
+  <div class="service-section">
+    <div class="service-text">
+      <h2>Content Writing and Blogging</h2>
+      <p>
+        Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+      </p>
+      <div class="service-buttons d-flex">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-outline-primary">Default</button>
+      </div>
+    </div>
+    <div class="service-image">
+      <img src="image/BLOGGING About.PNG" alt="Content Writing" />
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- ******************************Footer********************************* -->
+
+     <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-secondary-subtle">
+        <div class="col-md-4 d-flex align-items-center ">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 " aria-label="Bootstrap">
+                <!-- <svg class="bi" width="30" height="24" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg> -->
+
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary fs-5">Copyrights: GFXinn.com 2025</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.youtube.com/" aria-label="fa-youtube" target="_blank">
+                    <i class="fa-brands fa-youtube fs-4"></i>
+                </a>
+            </li>
+
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.facebook.com/" aria-label="fa-square-facebook" target="_blank">
+                    <i class="fa-brands fa-square-facebook fs-4"></i>
+                </a>
+            </li>
+
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.whatsapp.com/" aria-label="fa-square-whatsapp" target="_blank">
+                    <i class="fa-brands fa-square-whatsapp  fs-4"></i>
+                </a>
+            </li>
+
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.instagram.com/" aria-label="fa-square-instagram" target="_blank">
+                    <i class="fa-brands fa-square-instagram fs-4"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
